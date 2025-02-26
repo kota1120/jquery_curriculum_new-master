@@ -59,7 +59,7 @@
             $('.wrapper').html(encountHtml);
             $('.wrapper .name').text(jpName);
             $('.wrapper .img').attr('src', imageUrl);
-            $('#catch').click(function() {
+            $(document).on('click', '#catch', function() {
               if (Math.random() > 0.5) {
                 $.ajax({
                   url:'https://pokeapi.co/api/v2/item/4',
